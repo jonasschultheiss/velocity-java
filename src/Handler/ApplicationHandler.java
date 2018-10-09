@@ -7,18 +7,24 @@
 //
 
 package Handler;
+
+import Model.User;
+import javafx.stage.Stage;
+
 public class ApplicationHandler {
+
+    public User LoggedInUser;
+
     public ApplicationHandler () {
-
+        this.LoggedInUser = new User("");
     }
 
-    public void Start() {
-        CreateViewHandler();
+    public void Start(Stage primaryStage) {
+        CreateViewHandler(primaryStage);
     }
 
-    private void CreateViewHandler() {
-        ViewHandler viewHandler = new ViewHandler();
-        //
+    private void CreateViewHandler(Stage primaryStage) {
+        ViewHandler viewHandler = new ViewHandler(primaryStage);
     }
 
     // looks if Media folder exists. Returns a boolean value

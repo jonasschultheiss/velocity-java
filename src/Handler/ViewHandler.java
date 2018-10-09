@@ -8,6 +8,33 @@
 
 package Handler;
 
-public class ViewHandler {
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
 
+import java.io.IOException;
+
+public class ViewHandler {
+    private Stage primaryStage;
+
+    private Scene MainSidebar;
+
+    private Scene
+
+    public ViewHandler(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
+
+    public void Start() {
+
+    }
+
+    private void LoadMain () throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/../Form/View/MainSidebar.fxml"));
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+        primaryStage.getOnCloseRequest();
+    }
 }
