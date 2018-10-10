@@ -11,6 +11,8 @@ package Handler;
 import Model.User;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class ApplicationHandler {
 
     public User LoggedInUser;
@@ -25,6 +27,12 @@ public class ApplicationHandler {
 
     private void CreateViewHandler(Stage primaryStage) {
         ViewHandler viewHandler = new ViewHandler(primaryStage);
+        try {
+            viewHandler.Start();
+
+        } catch (IOException e) {
+            System.out.println(e);
+        }
     }
 
     // looks if Media folder exists. Returns a boolean value

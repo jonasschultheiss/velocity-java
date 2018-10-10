@@ -8,10 +8,11 @@
 
 package Handler;
 
+import Form.Controller.LoginController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -20,21 +21,31 @@ public class ViewHandler {
 
     private Scene MainSidebar;
 
-    private Scene
+    // private Scene
 
     public ViewHandler(Stage primaryStage) {
         this.primaryStage = primaryStage;
     }
 
-    public void Start() {
+    public void Start() throws IOException {
+        LoadLogin();
+    }
 
+    public void LoadLogin() throws IOException {
+        LoginController loginController = new LoginController();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setController(loginController);
+        loader.setLocation(getClass().getResource("../Form/View/Login/Login.fxml"));
+        Parent root = loader.load();
+        this.primaryStage.setTitle("velocity");
+        this.primaryStage.setScene(new Scene(root));
+        this.primaryStage.show();
     }
 
     private void LoadMain () throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/../Form/View/MainSidebar.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
-        primaryStage.getOnCloseRequest();
+        Parent root = FXMLLoader.load(getClass().getResource("../Form/View/MainSidebar.fxml"));
+        this.primaryStage.setTitle("velocity");
+        this.primaryStage.setScene(new Scene(root));
+        this.primaryStage.show();
     }
 }
