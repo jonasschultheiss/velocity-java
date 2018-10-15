@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         ApplicationHandler applicationHandler = new ApplicationHandler();
-        applicationHandler.Start(primaryStage);
+        applicationHandler.Start();
     }
 
 

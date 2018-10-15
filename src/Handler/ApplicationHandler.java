@@ -18,15 +18,15 @@ public class ApplicationHandler {
     public User LoggedInUser;
 
     public ApplicationHandler () {
-        this.LoggedInUser = new User("");
+
     }
 
-    public void Start(Stage primaryStage) {
-        CreateViewHandler(primaryStage);
+    public void Start() {
+        CreateViewHandler();
     }
 
-    private void CreateViewHandler(Stage primaryStage) {
-        ViewHandler viewHandler = new ViewHandler(primaryStage);
+    private void CreateViewHandler() {
+        ViewHandler viewHandler = new ViewHandler(this);
         try {
             viewHandler.Start();
 
