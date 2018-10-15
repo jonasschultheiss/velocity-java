@@ -1,74 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
-
-<AnchorPane prefHeight="536.0" prefWidth="286.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <ImageView fitHeight="131.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Media/Pictures/logowhite.png" />
-               </image>
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </ImageView>
-            <Label text="Create Account" textFill="WHITE">
-               <font>
-                  <Font name="DINPro-Bold" size="24.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </Label>
-            <Label fx:id="lblError" style="-fx-text-fill: red;" text="\${error.message}" />
-            <TextField fx:id="txfName" focusTraversable="false" maxWidth="-Infinity" prefWidth="180.0" promptText="Username" style="-fx-background-color: #303030; -fx-text-fill: white;">
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </TextField>
-            <PasswordField fx:id="txfPw1" focusTraversable="false" maxWidth="-Infinity" prefWidth="180.0" promptText="Password" style="-fx-background-color: #303030; -fx-text-fill: white;">
-               <font>
-                  <Font name="DINPro-Regular" size="13.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </PasswordField>
-            <PasswordField fx:id="txfPw2" focusTraversable="false" maxWidth="-Infinity" prefWidth="180.0" promptText="Confirm password" style="-fx-background-color: #303030; -fx-text-fill: white;">
-               <font>
-                  <Font name="DINPro-Regular" size="13.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </PasswordField>
-            <Button fx:id="btnCreate" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false" onAction="#create" prefWidth="180.0" style="-fx-background-color: #303030;" text="Sign up" textFill="WHITE">
-               <font>
-                  <Font name="DINPro-Regular" size="13.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </Button>
-            <Button fx:id="btnToLogin" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false" onAction="#toLogin" prefWidth="180.0" style="-fx-background-color: #303030;" text="Login instead" textFill="WHITE">
-               <font>
-                  <Font name="DINPro-Regular" size="13.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Button>
-         </children>
-      </VBox>
-   </children>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="536.0" prefWidth="286.0" style="-fx-background-color: #202020;"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0"
+         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="131.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Media/Pictures/logowhite.png"/>
+         </image>
+         <VBox.margin>
+            <Insets top="30.0"/>
+         </VBox.margin>
+      </ImageView>
+      <Label text="Create Account" textFill="WHITE">
+         <font>
+            <Font name="DINPro-Bold" size="24.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="30.0"/>
+         </VBox.margin>
+      </Label>
+      <Label fx:id="lblError" style="-fx-text-fill: red;" text="\${error.message}"/>
+      <TextField fx:id="txfName" focusTraversable="false" maxWidth="-Infinity" prefWidth="180.0"
+                 promptText="Username" style="-fx-background-color: #303030; -fx-text-fill: white;">
+         <VBox.margin>
+            <Insets top="30.0"/>
+         </VBox.margin>
+      </TextField>
+      <PasswordField fx:id="txfPw1" focusTraversable="false" maxWidth="-Infinity" prefWidth="180.0"
+                     promptText="Password" style="-fx-background-color: #303030; -fx-text-fill: white;">
+         <font>
+            <Font name="DINPro-Regular" size="13.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="10.0"/>
+         </VBox.margin>
+      </PasswordField>
+      <PasswordField fx:id="txfPw2" focusTraversable="false" maxWidth="-Infinity" prefWidth="180.0"
+                     promptText="Confirm password" style="-fx-background-color: #303030; -fx-text-fill: white;">
+         <font>
+            <Font name="DINPro-Regular" size="13.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="10.0"/>
+         </VBox.margin>
+      </PasswordField>
+      <Button fx:id="btnCreate" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false"
+              onAction="#create" prefWidth="180.0" style="-fx-background-color: #303030;" text="Sign up"
+              textFill="WHITE">
+         <font>
+            <Font name="DINPro-Regular" size="13.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="30.0"/>
+         </VBox.margin>
+      </Button>
+      <Button fx:id="btnToLogin" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false"
+              onAction="#toLogin" prefWidth="180.0" style="-fx-background-color: #303030;" text="Login instead"
+              textFill="WHITE">
+         <font>
+            <Font name="DINPro-Regular" size="13.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="10.0"/>
+         </VBox.margin>
+      </Button>
+   </VBox>
 </AnchorPane>
