@@ -25,7 +25,7 @@ public class LoginController {
     private CreatePaneController createPaneController;
 
     public LoginController() {
-        this.IsLoginActive = true;
+        this.IsLoginActive = false;
         this.loginPaneController = null;
         this.createPaneController = null;
     }

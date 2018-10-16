@@ -13,6 +13,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
 import java.io.IOException;
 
 public class ViewHandler {
@@ -41,6 +43,8 @@ public class ViewHandler {
         loader.setController(loginController);
         loader.setLocation(getClass().getResource("../Form/View/Login/Login.fxml"));
         stage.setScene(new Scene(loader.load()));
+        stage.setResizable(false);
+        stage.initStyle(StageStyle.UNDECORATED);
         stage.showAndWait();
     }
 
