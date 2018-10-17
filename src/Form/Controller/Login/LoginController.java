@@ -1,6 +1,7 @@
 package Form.Controller.Login;
 
 
+import Handler.ApplicationHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,6 +13,7 @@ import javafx.scene.media.MediaView;
 import java.io.IOException;
 
 public class LoginController {
+
     @FXML
     private MediaView mediaView;
 
@@ -24,10 +26,20 @@ public class LoginController {
 
     private CreatePaneController createPaneController;
 
+    private ApplicationHandler applicationHandler;
+
     public LoginController() {
         this.IsLoginActive = false;
         this.loginPaneController = null;
         this.createPaneController = null;
+        this.applicationHandler = null;
+    }
+
+    public LoginController(ApplicationHandler applicationHandler) {
+        this.IsLoginActive = false;
+        this.loginPaneController = null;
+        this.createPaneController = null;
+        this.applicationHandler = applicationHandler;
     }
 
     @FXML
@@ -40,7 +52,7 @@ public class LoginController {
         switchCenter();
     }
 
-    protected void switchCenter () {
+    protected void switchCenter() {
         if (!IsLoginActive) setLogin();
         else setCreate();
     }

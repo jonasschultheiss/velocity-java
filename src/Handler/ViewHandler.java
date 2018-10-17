@@ -9,6 +9,7 @@
 package Handler;
 
 import Form.Controller.Login.LoginController;
+import Form.Controller.Main.MainSidebarController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -29,29 +30,32 @@ public class ViewHandler {
 
     public void Start() throws IOException {
         StartLoginPhase();
+        StartMainPhase();
     }
 
-    private void InitWindow () {
+    private void InitWindow() {
         this.stage = new Stage();
         this.stage.setTitle("velocity");
         this.stage.getIcons().add(new Image(getClass().getResource("../Media/Pictures/logowhite.png").toExternalForm()));
     }
 
     private void StartLoginPhase() throws IOException {
-        LoginController loginController = new LoginController();
+        LoginController loginController = new LoginController(this.applicationHandler);
         FXMLLoader loader = new FXMLLoader();
         loader.setController(loginController);
         loader.setLocation(getClass().getResource("../Form/View/Login/Login.fxml"));
-        stage.setScene(new Scene(loader.load()));
-        stage.setResizable(false);
-        stage.initStyle(StageStyle.UNDECORATED);
-        stage.showAndWait();
+        this.stage.setScene(new Scene(loader.load()));
+        this.stage.setResizable(false);
+        this.stage.initStyle(StageStyle.UNDECORATED);
+        this.stage.showAndWait();
     }
 
-//    private void LoadMain (User user) throws IOException {
-//        Parent root = FXMLLoader.load(getClass().getResource("../Form/View/MainSidebar.fxml"));
-//        this.primaryStage.setTitle("velocity");
-//        this.primaryStage.setScene(new Scene(root));
-//        this.primaryStage.show();
-//    }
+    private void StartMainPhase() throws IOException {
+        MainSidebarController mainSidebarController = new MainSidebarController();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setController(mainSidebarController);
+        loader.setLocation(getClass().getResource("../Form/View/Main/MainSidebar.fxml"));
+        this.stage.setScene(new Scene(loader.load()));
+        this.stage.show();
+    }
 }

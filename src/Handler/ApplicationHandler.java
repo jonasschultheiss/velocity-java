@@ -11,13 +11,18 @@ package Handler;
 import Model.User;
 import javafx.stage.Stage;
 
+import java.beans.ExceptionListener;
+import java.beans.XMLDecoder;
+import java.beans.XMLEncoder;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ApplicationHandler {
 
     public User LoggedInUser;
 
-    public ApplicationHandler () {
+    public ApplicationHandler() {
 
     }
 
@@ -33,15 +38,5 @@ public class ApplicationHandler {
         } catch (IOException e) {
             System.out.println(e);
         }
-    }
-
-    // looks if Media folder exists. Returns a boolean value
-    private boolean isFirstStart() {
-        // do stuff
-        return true;
-    }
-
-    private void GetAssets() {
-
     }
 }
