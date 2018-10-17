@@ -3,26 +3,25 @@ package Model;
 public class User {
     private String Name;
 
-    private String PasswordHash;
+    private String Password;
 
-    private String Image;
+    private String ImagePath;
 
     public User() {
 
     }
 
-    public User(String name, String passwordHash, String image) {
+    public User(String name, String password, String imagePath) {
         this.Name = name;
-        this.PasswordHash = passwordHash;
-        this.Image = image;
+        this.Password = password;
+        this.ImagePath = imagePath;
     }
 
-    public void CreateDummy() {
-        this.Name = "quest1onmark";
-        this.PasswordHash = "DA6893B1B1CCB0CEE5E9776BEFB6D5863995845CB56EB2C0519172ABCCAD9CBFEBAB02864C3FD69811540481734CDC19F9F7FF999A4E2B4F8F0516EBDA0E4AA4";
-        this.Image = "quest1.jpg";
+    public User(String name, String password) {
+        this.Name = name;
+        this.Password = password;
+        this.ImagePath = null;
     }
-
 
     public String getName() {
         return this.Name;
@@ -33,18 +32,18 @@ public class User {
     }
 
     public String getImage() {
-        return Image;
+        return ImagePath;
     }
 
     public void setImage(String image) {
-        Image = image;
+        ImagePath = image;
     }
 
-    public String getPasswordHash() {
-        return PasswordHash;
+    public String getPassword() {
+        return Password;
     }
 
-    public void setPasswordHash(String passwordHash) {
-        PasswordHash = passwordHash;
+    public void setPassword(String password) {
+        Password = password;
     }
 }

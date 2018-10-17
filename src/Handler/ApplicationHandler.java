@@ -22,21 +22,18 @@ public class ApplicationHandler {
 
     public User LoggedInUser;
 
-    public ApplicationHandler() {
+    public UserHandler userHandler;
 
+    public ApplicationHandler() throws IOException {
+        userHandler = new UserHandler();
     }
 
-    public void Start() {
-        CreateViewHandler();
+    public void Start() throws IOException {
+        CreateAndStartViewHandler();
     }
 
-    private void CreateViewHandler() {
+    private void CreateAndStartViewHandler() throws IOException {
         ViewHandler viewHandler = new ViewHandler(this);
-        try {
-            viewHandler.Start();
-
-        } catch (IOException e) {
-            System.out.println(e);
-        }
+        viewHandler.Start();
     }
 }

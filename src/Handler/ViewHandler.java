@@ -19,9 +19,9 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 
 public class ViewHandler {
-    private ApplicationHandler applicationHandler;
+    public ApplicationHandler applicationHandler;
 
-    private Stage stage;
+    public Stage stage;
 
     public ViewHandler(ApplicationHandler applicationHandler) {
         this.applicationHandler = applicationHandler;
@@ -40,22 +40,25 @@ public class ViewHandler {
     }
 
     private void StartLoginPhase() throws IOException {
-        LoginController loginController = new LoginController(this.applicationHandler);
+        LoginController loginController = new LoginController(this);
         FXMLLoader loader = new FXMLLoader();
         loader.setController(loginController);
         loader.setLocation(getClass().getResource("../Form/View/Login/Login.fxml"));
         this.stage.setScene(new Scene(loader.load()));
         this.stage.setResizable(false);
-        this.stage.initStyle(StageStyle.UNDECORATED);
         this.stage.showAndWait();
     }
 
     private void StartMainPhase() throws IOException {
-        MainSidebarController mainSidebarController = new MainSidebarController();
-        FXMLLoader loader = new FXMLLoader();
-        loader.setController(mainSidebarController);
-        loader.setLocation(getClass().getResource("../Form/View/Main/MainSidebar.fxml"));
-        this.stage.setScene(new Scene(loader.load()));
-        this.stage.show();
+        if (this.applicationHandler.LoggedInUser != null) {
+            InitWindow();
+            MainSidebarController mainSidebarController = new MainSidebarController(this);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setController(mainSidebarController);
+            loader.setLocation(getClass().getResource("../Form/View/Main/MainSidebar.fxml"));
+            this.stage.setScene(new Scene(loader.load()));
+            this.stage.show();
+        }
+
     }
 }

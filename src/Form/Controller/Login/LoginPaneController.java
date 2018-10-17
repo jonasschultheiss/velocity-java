@@ -1,5 +1,6 @@
 package Form.Controller.Login;
 
+import Model.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -36,11 +37,24 @@ public class LoginPaneController {
 
     @FXML
     void login(ActionEvent event) {
-
+        var user = this.loginController.viewHandler.applicationHandler.userHandler.GetByName(this.txfName.getText());
+        if (user == null) {
+            DisplayError("Username or password not correct.");
+        } else if (!this.txfPw1.getText().equals(user.getPassword())) {
+            DisplayError("Username or password not correct.");
+        } else {
+            this.loginController.viewHandler.applicationHandler.LoggedInUser = this.loginController.viewHandler.applicationHandler.userHandler.GetByName(txfName.getText());
+            this.loginController.viewHandler.stage.close();
+        }
     }
 
     @FXML
     void toCreate(ActionEvent event) {
         this.loginController.switchCenter();
+    }
+
+    private void DisplayError(String errorMessage) {
+        this.lblError.setVisible(true);
+        this.lblError.setText(errorMessage);
     }
 }

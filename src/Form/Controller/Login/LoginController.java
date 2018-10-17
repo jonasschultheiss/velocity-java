@@ -2,9 +2,12 @@ package Form.Controller.Login;
 
 
 import Handler.ApplicationHandler;
+import Handler.ViewHandler;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -26,20 +29,20 @@ public class LoginController {
 
     private CreatePaneController createPaneController;
 
-    private ApplicationHandler applicationHandler;
+    public ViewHandler viewHandler;
 
     public LoginController() {
         this.IsLoginActive = false;
         this.loginPaneController = null;
         this.createPaneController = null;
-        this.applicationHandler = null;
+        this.viewHandler = null;
     }
 
-    public LoginController(ApplicationHandler applicationHandler) {
+    public LoginController(ViewHandler viewHandler) {
         this.IsLoginActive = false;
         this.loginPaneController = null;
         this.createPaneController = null;
-        this.applicationHandler = applicationHandler;
+        this.viewHandler = viewHandler;
     }
 
     @FXML

@@ -1,5 +1,6 @@
 package Form.Controller.Main;
 
+import Handler.ViewHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -29,6 +30,17 @@ public class MainSidebarController {
 
     @FXML
     private Button btnWelcome;
+
+    public ViewHandler viewHandler;
+
+    public MainSidebarController(ViewHandler viewHandler) {
+        this.viewHandler = viewHandler;
+    }
+
+    @FXML
+    public void initialize() {
+        this.lblUserName.setText(viewHandler.applicationHandler.LoggedInUser.getName());
+    }
 
     @FXML
     void welcome(ActionEvent event) {

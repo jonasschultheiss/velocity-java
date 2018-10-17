@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class CreatePaneController {
 
     @FXML
@@ -39,9 +41,18 @@ public class CreatePaneController {
     }
 
     @FXML
-    void create(ActionEvent event) {
-        if (txfPw1.getText().equals(txfPw2.getText())) {
-
+    void create(ActionEvent event) throws IOException {
+        if (DoesUserExist(txfName.getText())) {
+            DisplayError("User already exists.");
+        } else if (!txfPw1.getText().equals(txfPw2.getText())) {
+            DisplayError("Passwords do not match.");
+        } else if (txfPw1.getLength() < 8 || txfPw1.getLength() > 13) {
+            DisplayError("Password has to be between 8 and 13 chars.");
+        } else {
+            this.loginController.viewHandler.applicationHandler.userHandler.CreateNewUser(txfName.getText(), txfPw1.getText());
+            this.loginController.viewHandler.applicationHandler.userHandler.Save();
+            this.loginController.viewHandler.applicationHandler.LoggedInUser = this.loginController.viewHandler.applicationHandler.userHandler.GetByName(txfName.getText());
+            this.loginController.viewHandler.stage.close();
         }
     }
 
@@ -50,4 +61,16 @@ public class CreatePaneController {
         this.loginController.switchCenter();
     }
 
+    private boolean DoesUserExist(String name) {
+        if (this.loginController.viewHandler.applicationHandler.userHandler.GetByName(name) == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    private void DisplayError(String errorMessage) {
+        this.lblError.setVisible(true);
+        this.lblError.setText(errorMessage);
+    }
 }
