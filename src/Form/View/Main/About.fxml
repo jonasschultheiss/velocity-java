@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="56.0" layoutY="46.0" text="About" textFill="WHITE" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="DINPro-Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="182.0" text="About this programm:" textFill="WHITE" AnchorPane.leftAnchor="60.0" />
+      <Pane layoutX="57.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353535;" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="63.0">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="11.0" layoutY="13.0" prefHeight="179.0" prefWidth="943.0" text="Lorem ipsum dolor sit amet, mel at brute phaedrum prodesset, vel tota vocent honestatis an, no sit alia prima voluptatum. Mei te suas stet blandit. &#10;Quo ei utroque nostrum facilisis, autem epicurei voluptatum has ne. An alia honestatis vel, nullam libris laboramus ea vis.Ad his affert appareat&#10;patrioque, cu nec munere appareat praesent, aliquid gubergren ad mea. Nullam tacimates no eum, falli evertitur signiferumque id nec. Vim in partem&#10;volutpat petentium, te minim vidisse sit. Te denique accusamus temporibus his, tale inani iudicabit nam eu, convenire instructior duo ex. Ludus&#10;facete quaerendum te his, quo prima electram at, et sale adolescens signiferumque vim.Iudicabit dissentiet nam ea. Tale primis aeterno ut eum,&#10;ex aperiri habemus dissentiunt sed. Eu mel nulla melius. Aperiam reprimique eos id.Et cum assum graecis adversarium. Eripuit pericula signiferumque&#10;eam eu. Iusto nullam has et, ad ferri graeci pro. Per quidam eligendi dignissim an. Id quo solum ullum novum, ei quo decore offendit, has dolore&#10;inermis et.&#10;" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="DINPro-Regular" size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="50.0" />
+         </padding>
+      </Pane>
+      <Pane layoutX="53.0" layoutY="413.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353535;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+         <children>
+            <ImageView fx:id="imvTwitter" fitHeight="150.0" fitWidth="150.0" layoutX="30.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Media/Pictures/twitter.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imvGithub" fitHeight="106.0" fitWidth="136.0" layoutX="269.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Media/Pictures/github.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imvGitLab" fitHeight="114.0" fitWidth="114.0" layoutX="517.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Media/Pictures/gitlab.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imvLinkedin" fitHeight="106.0" fitWidth="103.0" layoutX="788.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Media/Pictures/linkedin.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="55.0" layoutY="46.0" mnemonicParsing="false" onAction="#openTwitter" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="100.0" prefWidth="102.0" style="-fx-background-color: transparent;" />
+            <Button layoutX="269.0" layoutY="37.0" mnemonicParsing="false" onAction="#openGithub" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="114.0" prefWidth="122.0" style="-fx-background-color: transparent;" />
+            <Button layoutX="511.0" layoutY="38.0" mnemonicParsing="false" onAction="#openGitLab" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="113.0" prefWidth="122.0" style="-fx-background-color: transparent;" />
+            <Button layoutX="788.0" layoutY="45.0" mnemonicParsing="false" onAction="#openLinkedin" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="107.0" prefWidth="103.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Label layoutX="59.0" layoutY="441.0" text="My social media channels:" textFill="WHITE" />
+   </children>
+</AnchorPane>

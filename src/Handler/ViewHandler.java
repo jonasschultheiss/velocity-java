@@ -11,6 +11,7 @@ package Handler;
 import Form.Controller.Login.LoginController;
 import Form.Controller.Main.MainSidebarController;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -36,7 +37,7 @@ public class ViewHandler {
     private void InitWindow() {
         this.stage = new Stage();
         this.stage.setTitle("velocity");
-        this.stage.getIcons().add(new Image(getClass().getResource("../Media/Pictures/logowhite.png").toExternalForm()));
+        this.stage.getIcons().add(new Image(getClass().getResource("../Media/Pictures/logoblack.png").toExternalForm()));
     }
 
     private void StartLoginPhase() throws IOException {
@@ -60,5 +61,13 @@ public class ViewHandler {
             this.stage.show();
         }
 
+    }
+
+    public void mouseEnter() {
+        this.stage.getScene().setCursor(Cursor.HAND);
+    }
+
+    public void mouseExit() {
+        this.stage.getScene().setCursor(Cursor.DEFAULT);
     }
 }

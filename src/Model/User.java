@@ -8,19 +8,21 @@ public class User {
     private String ImagePath;
 
     public User() {
-
+        this.Name = "";
+        this.Password = "";
+        this.ImagePath = "";
     }
 
     public User(String name, String password, String imagePath) {
         this.Name = name;
         this.Password = password;
-        this.ImagePath = imagePath;
+        this.ImagePath =  imagePath;
     }
 
     public User(String name, String password) {
         this.Name = name;
         this.Password = password;
-        this.ImagePath = null;
+        this.ImagePath = "Media/Pictures/ProfilePictures/1.png";
     }
 
     public String getName() {
@@ -31,12 +33,12 @@ public class User {
         this.Name = name;
     }
 
-    public String getImage() {
+    public String getImagePath() {
         return ImagePath;
     }
 
-    public void setImage(String image) {
-        ImagePath = image;
+    public void setImagePath(String imagePath) {
+        ImagePath = imagePath;
     }
 
     public String getPassword() {
