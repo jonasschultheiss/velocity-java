@@ -1,5 +1,6 @@
 package Form.Controller.Login;
 
+import Model.PlayerDBO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -52,6 +53,8 @@ public class CreatePaneController {
             this.loginController.viewHandler.applicationHandler.userHandler.CreateNewUser(txfName.getText(), txfPw1.getText());
             this.loginController.viewHandler.applicationHandler.userHandler.Save();
             this.loginController.viewHandler.applicationHandler.LoggedInUser = this.loginController.viewHandler.applicationHandler.userHandler.GetByName(txfName.getText());
+            PlayerDBO playerDBO = new PlayerDBO();
+            this.loginController.viewHandler.applicationHandler.LoggedInUser.setReserve(playerDBO.defaultList);
             this.loginController.viewHandler.stage.close();
         }
     }

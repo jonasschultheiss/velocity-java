@@ -1,5 +1,948 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="10.0.2" class="java.beans.XMLDecoder">
  <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Model.User" id="User0">
+    <void property="imagePath">
+     <string>Media/Pictures/ProfilePictures/1.png</string>
+    </void>
+    <void property="name">
+     <string>dev</string>
+    </void>
+    <void property="password">
+     <string>11111111</string>
+    </void>
+    <void property="reserve">
+     <void method="add">
+      <object class="Model.Player" id="Player0">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player0"/>
+         <int>1</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player0"/>
+         <string>Roman Bürki</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player0"/>
+         <string>Goalie</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player0"/>
+         <string>buerki.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player1">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player1"/>
+         <int>35</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player1"/>
+         <string>Marwin Hitz</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player1"/>
+         <string>Goalie</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player1"/>
+         <string>hitz.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player2">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player2"/>
+         <int>40</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player2"/>
+         <string>Eric Oelschlägel</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player2"/>
+         <string>Goalie</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player2"/>
+         <string>oelschlägel.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player3">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player3"/>
+         <int>16</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player3"/>
+         <string>Manuel Akanji</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player3"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player3"/>
+         <string>akanji.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player4">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player4"/>
+         <int>4</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player4"/>
+         <string>Abdou Diallo</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player4"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player4"/>
+         <string>Diallo.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player5">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player5"/>
+         <int>13</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player5"/>
+         <string>Raphael Guerreiro</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player5"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player5"/>
+         <string>guerreiro.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player6">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player6"/>
+         <int>5</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player6"/>
+         <string>Achraf Hakimi</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player6"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player6"/>
+         <string>hakimi.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player7">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player7"/>
+         <int>26</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player7"/>
+         <string>Lukasz Piszczek</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player7"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player7"/>
+         <string>piszczek.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player8">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player8"/>
+         <int>29</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player8"/>
+         <string>Marcel Schmelzer</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player8"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player8"/>
+         <string>schmelzer.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player9">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player9"/>
+         <int>15</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player9"/>
+         <string>Jeremy Toljan</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player9"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player9"/>
+         <string>toljantol.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player10">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player10"/>
+         <int>36</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player10"/>
+         <string>Ömer Toprak</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player10"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player10"/>
+         <string>toprak.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player11">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player11"/>
+         <int>2</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player11"/>
+         <string>Dan-Axel Zagadou</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player11"/>
+         <string>Defense</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player11"/>
+         <string>zagadou.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player12">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player12"/>
+         <int>34</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player12"/>
+         <string>Jacob Bruun Larsen</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player12"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player12"/>
+         <string>larsenl.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player13">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player13"/>
+         <int>32</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player13"/>
+         <string>Dzenis Burnic</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player13"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player13"/>
+         <string>burnic.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player14">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player14"/>
+         <int>19</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player14"/>
+         <string>Mahmoud Dahoud</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player14"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player14"/>
+         <string>dahoud.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player15">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player15"/>
+         <int>6</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player15"/>
+         <string>Thomas Delaney</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player15"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player15"/>
+         <string>delaney.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player16">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player16"/>
+         <int>17</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player16"/>
+         <string>Sergio Gomez</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player16"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player16"/>
+         <string>gomez.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player17">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player17"/>
+         <int>10</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player17"/>
+         <string>Mario Götze</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player17"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player17"/>
+         <string>götze.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player18">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player18"/>
+         <int>23</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player18"/>
+         <string>Shinji Kagawa</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player18"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player18"/>
+         <string>kagawa.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player19">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player19"/>
+         <int>22</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player19"/>
+         <string>Christian Pulisic</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player19"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player19"/>
+         <string>pulisic.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player20">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player20"/>
+         <int>11</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player20"/>
+         <string>Marco Reus</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player20"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player20"/>
+         <string>reus.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player21">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player21"/>
+         <int>18</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player21"/>
+         <string>Sebastian Rode</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player21"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player21"/>
+         <string>rode.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player22">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player22"/>
+         <int>7</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player22"/>
+         <string>Jadon Sancho</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player22"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player22"/>
+         <string>sancho.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player23">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player23"/>
+         <int>33</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player23"/>
+         <string>Julian Weigl</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player23"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player23"/>
+         <string>weigl.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player24">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player24"/>
+         <int>28</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player24"/>
+         <string>Axel Witsel</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player24"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player24"/>
+         <string>witsel.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player25">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player25"/>
+         <int>27</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player25"/>
+         <string>Marius Wolf</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player25"/>
+         <string>Midfield</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player25"/>
+         <string>wolf.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player26">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player26"/>
+         <int>14</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player26"/>
+         <string>Alexander Isak</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player26"/>
+         <string>Forward</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player26"/>
+         <string>isak.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player27">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player27"/>
+         <int>9</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player27"/>
+         <string>Paco Alcacer</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player27"/>
+         <string>Forward</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player27"/>
+         <string>alcacer.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="Model.Player" id="Player28">
+       <void class="Model.Player" method="getField">
+        <string>Number</string>
+        <void method="set">
+         <object idref="Player28"/>
+         <int>20</int>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Name</string>
+        <void method="set">
+         <object idref="Player28"/>
+         <string>Maximilian Philipp</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>Position</string>
+        <void method="set">
+         <object idref="Player28"/>
+         <string>Forward</string>
+        </void>
+       </void>
+       <void class="Model.Player" method="getField">
+        <string>ImageName</string>
+        <void method="set">
+         <object idref="Player28"/>
+         <string>philippp.jpg</string>
+        </void>
+       </void>
+      </object>
+     </void>
+    </void>
+   </object>
+  </void>
  </object>
 </java>

@@ -58,9 +58,16 @@ public class MainSidebarController {
     }
 
     @FXML
-    void toTeam() {
+    void toTeam() throws IOException {
         this.borderpane.setCenter(null);
         SetTransparancy(1);
+        TeamController teamController = new TeamController(this.viewHandler);
+        FXMLLoader loader = new FXMLLoader();
+        Parent root = null;
+        loader.setController(teamController);
+        loader.setLocation(getClass().getResource("../../View/Main/Team.fxml"));
+        root = loader.load();
+        this.borderpane.setCenter(root);
     }
 
     @FXML
