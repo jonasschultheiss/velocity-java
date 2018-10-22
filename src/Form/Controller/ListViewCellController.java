@@ -50,21 +50,13 @@ public class ListViewCellController extends ListCell<Player> {
         super.updateItem(player, empty);
 
         if (empty || player == null) {
-            setText(null);
             setGraphic(null);
         } else {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../View/ListViewCell.fxml"));
-            loader.setController(this);
 
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
             this.lblName.setText(player.Name);
             this.lblPosition.setText(player.Position);
             this.lblNumber.setText(String.valueOf(player.Number));
-            this.imvPlayerProfile.setImage(new Image("src/Media/Pictures/Players/" + player.ImageName));
+            // this.imvPlayerProfile.setImage(new Image("src/Media/Pictures/Players/" + player.ImageName));
         }
     }
 }
