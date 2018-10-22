@@ -15,7 +15,7 @@
          </font>
       </Label>
       <Label layoutX="60.0" layoutY="182.0" text="About this programm:" textFill="WHITE" AnchorPane.leftAnchor="60.0" />
-      <Pane layoutX="57.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353535;" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="63.0">
+      <Pane layoutX="57.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #353535;" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
          <children>
             <Label alignment="TOP_LEFT" layoutX="11.0" layoutY="13.0" prefHeight="179.0" prefWidth="943.0" text="Lorem ipsum dolor sit amet, mel at brute phaedrum prodesset, vel tota vocent honestatis an, no sit alia prima voluptatum. Mei te suas stet blandit. &#10;Quo ei utroque nostrum facilisis, autem epicurei voluptatum has ne. An alia honestatis vel, nullam libris laboramus ea vis.Ad his affert appareat&#10;patrioque, cu nec munere appareat praesent, aliquid gubergren ad mea. Nullam tacimates no eum, falli evertitur signiferumque id nec. Vim in partem&#10;volutpat petentium, te minim vidisse sit. Te denique accusamus temporibus his, tale inani iudicabit nam eu, convenire instructior duo ex. Ludus&#10;facete quaerendum te his, quo prima electram at, et sale adolescens signiferumque vim.Iudicabit dissentiet nam ea. Tale primis aeterno ut eum,&#10;ex aperiri habemus dissentiunt sed. Eu mel nulla melius. Aperiam reprimique eos id.Et cum assum graecis adversarium. Eripuit pericula signiferumque&#10;eam eu. Iusto nullam has et, ad ferri graeci pro. Per quidam eligendi dignissim an. Id quo solum ullum novum, ei quo decore offendit, has dolore&#10;inermis et.&#10;" textFill="WHITE">
                <padding>

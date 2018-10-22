@@ -61,6 +61,16 @@ public class CreatePaneController {
         this.loginController.switchCenter();
     }
 
+    @FXML
+    void enter() {
+        this.loginController.viewHandler.mouseEnter();
+    }
+
+    @FXML
+    void exit() {
+        this.loginController.viewHandler.mouseExit();
+    }
+
     private boolean DoesUserExist(String name) {
         if (this.loginController.viewHandler.applicationHandler.userHandler.GetByName(name) == null) {
             return false;

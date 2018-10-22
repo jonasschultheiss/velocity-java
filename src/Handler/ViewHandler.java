@@ -10,12 +10,14 @@ package Handler;
 
 import Form.Controller.Login.LoginController;
 import Form.Controller.Main.MainSidebarController;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 
@@ -58,6 +60,13 @@ public class ViewHandler {
             loader.setController(mainSidebarController);
             loader.setLocation(getClass().getResource("../Form/View/Main/MainSidebar.fxml"));
             this.stage.setScene(new Scene(loader.load()));
+            this.stage.setOnCloseRequest(we -> {
+                try {
+                    this.applicationHandler.userHandler.Save();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            });
             this.stage.show();
         }
 

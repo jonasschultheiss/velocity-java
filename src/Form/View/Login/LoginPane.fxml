@@ -44,7 +44,7 @@
                       <Insets top="10.0" />
                   </VBox.margin>
               </PasswordField>
-              <Button fx:id="btnLogin" defaultButton="true" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false" onAction="#login" prefWidth="180.0" style="-fx-background-color: #303030;" text="Login" textFill="WHITE">
+              <Button fx:id="btnLogin" defaultButton="true" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false" onAction="#login" onMouseEntered="#enter" onMouseExited="#exit" prefWidth="180.0" style="-fx-background-color: #303030;" text="Login" textFill="WHITE">
                   <font>
                       <Font name="DINPro-Regular" size="13.0" />
                   </font>
@@ -52,7 +52,7 @@
                       <Insets top="30.0" />
                   </VBox.margin>
               </Button>
-              <Button fx:id="btnToCreate" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false" onAction="#toCreate" prefWidth="180.0" style="-fx-background-color: #303030;" text="Create an account instead" textFill="WHITE">
+              <Button fx:id="btnToCreate" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false" onAction="#toCreate" onMouseEntered="#enter" onMouseExited="#exit" prefWidth="180.0" style="-fx-background-color: #303030;" text="Create an account instead" textFill="WHITE">
                   <font>
                       <Font name="DINPro-Regular" size="13.0" />
                   </font>

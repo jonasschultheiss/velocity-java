@@ -53,6 +53,16 @@ public class LoginPaneController {
         this.loginController.switchCenter();
     }
 
+    @FXML
+    void enter() {
+        this.loginController.viewHandler.mouseEnter();
+    }
+
+    @FXML
+    void exit() {
+        this.loginController.viewHandler.mouseExit();
+    }
+
     private void DisplayError(String errorMessage) {
         this.lblError.setVisible(true);
         this.lblError.setText(errorMessage);

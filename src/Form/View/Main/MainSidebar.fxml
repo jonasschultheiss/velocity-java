@@ -34,7 +34,7 @@
                                    </Label>
                                </children>
                             </GridPane>
-                            <Button fx:id="btnHome" mnemonicParsing="false" onAction="#toHome" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #303030;" text="Home" textFill="WHITE">
+                            <Button fx:id="btnHome" mnemonicParsing="false" onAction="#toHome" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #303030;" text="Home" textFill="WHITE">
                                 <font>
                                     <Font name="DINPro-Regular" size="13.0" />
                                 </font>
@@ -42,7 +42,7 @@
                                     <Insets />
                                 </VBox.margin>
                             </Button>
-                            <Button fx:id="btnTeam" mnemonicParsing="false" onAction="#toTeam" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Team" textFill="WHITE">
+                            <Button fx:id="btnTeam" mnemonicParsing="false" onAction="#toTeam" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Team" textFill="WHITE">
                                 <font>
                                     <Font name="DINPro-Regular" size="13.0" />
                                 </font>
@@ -50,7 +50,7 @@
                                     <Insets />
                                 </VBox.margin>
                             </Button>
-                            <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#toPlay" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Play" textFill="WHITE">
+                            <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#toPlay" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Play" textFill="WHITE">
                                 <font>
                                     <Font name="DINPro-Regular" size="13.0" />
                                 </font>
@@ -58,7 +58,7 @@
                                     <Insets />
                                 </VBox.margin>
                             </Button>
-                            <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#toSettings" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Settings" textFill="WHITE">
+                            <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#toSettings" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Settings" textFill="WHITE">
                                 <font>
                                     <Font name="DINPro-Regular" size="13.0" />
                                 </font>
@@ -66,7 +66,7 @@
                                     <Insets />
                                 </VBox.margin>
                             </Button>
-                            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#toAbout" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="About" textFill="WHITE">
+                            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#toAbout" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="About" textFill="WHITE">
                                 <font>
                                     <Font name="DINPro-Regular" size="13.0" />
                                 </font>

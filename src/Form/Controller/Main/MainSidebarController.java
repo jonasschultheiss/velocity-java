@@ -21,7 +21,7 @@ public class MainSidebarController {
     private Button btnTeam;
 
     @FXML
-    private ImageView pcbUserPicture;
+    public ImageView pcbUserPicture;
 
     @FXML
     private Button btnSettings;
@@ -47,36 +47,43 @@ public class MainSidebarController {
 
     @FXML
     public void initialize() {
-        this.lblUserName.setText(viewHandler.applicationHandler.LoggedInUser.getName());
         this.pcbUserPicture.setImage(new Image(this.viewHandler.applicationHandler.LoggedInUser.getImagePath(), 160, 160, false, true));
+        this.lblUserName.setText(viewHandler.applicationHandler.LoggedInUser.getName());
     }
 
     @FXML
-    void toHome(ActionEvent event) {
+    void toHome() {
         this.borderpane.setCenter(null);
         SetTransparancy(0);
     }
 
     @FXML
-    void toTeam(ActionEvent event) {
+    void toTeam() {
         this.borderpane.setCenter(null);
         SetTransparancy(1);
     }
 
     @FXML
-    void toPlay(ActionEvent event) {
+    void toPlay() {
         this.borderpane.setCenter(null);
         SetTransparancy(2);
     }
 
     @FXML
-    void toSettings(ActionEvent event) {
-        this.borderpane.setCenter(null);
+    void toSettings() throws IOException {
         SetTransparancy(3);
+        this.borderpane.setCenter(null);
+        SettingsController settingsController = new SettingsController(this);
+        FXMLLoader loader = new FXMLLoader();
+        Parent root = null;
+        loader.setController(settingsController);
+        loader.setLocation(getClass().getResource("../../View/Main/Settings.fxml"));
+        root = loader.load();
+        this.borderpane.setCenter(root);
     }
 
     @FXML
-    void toAbout(ActionEvent event) throws IOException {
+    void toAbout() throws IOException {
         this.borderpane.setCenter(null);
         SetTransparancy(4);
         AboutController aboutController = new AboutController(this.viewHandler);
@@ -86,6 +93,19 @@ public class MainSidebarController {
         loader.setLocation(getClass().getResource("../../View/Main/About.fxml"));
         root = loader.load();
         this.borderpane.setCenter(root);
+    }
+
+    @FXML
+    void mouseEnter() {
+        this.viewHandler.mouseEnter();
+    }
+
+    @FXML
+    void mouseExit() {
+        this.viewHandler.mouseExit();
+    }
+
+    public void UpdateUserInfo () {
     }
 
     private void SetTransparancy(int row) {
