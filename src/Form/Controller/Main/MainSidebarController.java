@@ -1,7 +1,6 @@
 package Form.Controller.Main;
 
 import Handler.ViewHandler;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -112,7 +111,7 @@ public class MainSidebarController {
         this.viewHandler.mouseExit();
     }
 
-    public void UpdateUserInfo () {
+    public void UpdateUserInfo() {
     }
 
     private void SetTransparancy(int row) {

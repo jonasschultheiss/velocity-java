@@ -2,11 +2,9 @@ package Form.Controller.Main;
 
 import Handler.ViewHandler;
 import javafx.fxml.FXML;
-import javafx.scene.Cursor;
 import javafx.scene.image.ImageView;
 
 import java.awt.*;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class AboutController {

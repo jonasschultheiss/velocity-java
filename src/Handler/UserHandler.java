@@ -10,7 +10,7 @@ public class UserHandler {
 
     private UserDBO userDBO;
 
-    public UserHandler() throws IOException {
+    UserHandler() throws IOException {
         this.serializationHandler = new SerializationHandler();
         this.userDBO = new UserDBO();
         this.userDBO.users = this.serializationHandler.DeserializeUserDBO();
@@ -25,13 +25,8 @@ public class UserHandler {
         this.userDBO.users.add(user);
     }
 
-    public void CreateNewUser(String name, String password, String imagePath) {
-        User user = new User(name, password, imagePath);
-        this.userDBO.users.add(user);
-    }
-
     public User GetByName(String name) {
-        for (User user: this.userDBO.users) {
+        for (User user : this.userDBO.users) {
             if (user.getName().equals(name)) return user;
         }
         return null;

@@ -1,7 +1,5 @@
 package Form.Controller.Main;
 
-import Handler.ViewHandler;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -55,11 +53,6 @@ public class SettingsController {
 
     public SettingsController(MainSidebarController mainSidebarController) {
         this.mainSidebarController = mainSidebarController;
-    }
-
-    @FXML
-    public void initialize() {
-
     }
 
     @FXML

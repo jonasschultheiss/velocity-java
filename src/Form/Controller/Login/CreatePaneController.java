@@ -1,7 +1,6 @@
 package Form.Controller.Login;
 
 import Model.PlayerDBO;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -42,7 +41,7 @@ public class CreatePaneController {
     }
 
     @FXML
-    void create(ActionEvent event) throws IOException {
+    void create() throws IOException {
         if (DoesUserExist(txfName.getText())) {
             DisplayError("User already exists.");
         } else if (!txfPw1.getText().equals(txfPw2.getText())) {
@@ -60,7 +59,7 @@ public class CreatePaneController {
     }
 
     @FXML
-    void toLogin(ActionEvent event) {
+    void toLogin() {
         this.loginController.switchCenter();
     }
 

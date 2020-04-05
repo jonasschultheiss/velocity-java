@@ -1,39 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="56.0" layoutY="46.0" text="Team" textFill="WHITE" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="50.0">
-         <font>
-            <Font name="DINPro-Bold" size="50.0" />
-         </font>
-      </Label>
-      <ListView fx:id="lsvActive" layoutX="47.0" layoutY="172.0" prefHeight="480.0" prefWidth="280.0" style="-fx-background-color: #353535;" />
-      <ListView fx:id="lsvReserve" layoutX="754.0" layoutY="172.0" prefHeight="480.0" prefWidth="280.0" style="-fx-background-color: #353535;" />
-      <ListView fx:id="lsvSub" layoutX="400.0" layoutY="172.0" prefHeight="480.0" prefWidth="280.0" style="-fx-background-color: #353535;" />
-      <Button fx:id="btnActive" layoutX="47.0" layoutY="670.0" mnemonicParsing="false" onAction="#toActive" prefHeight="27.0" prefWidth="280.0" style="-fx-background-color: #252525;" text="Move player to active" textFill="WHITE">
-         <font>
-            <Font name="DINPro-Regular" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSub" layoutX="400.0" layoutY="670.0" mnemonicParsing="false" onAction="#toSub" prefHeight="27.0" prefWidth="280.0" style="-fx-background-color: #252525;" text="Move player to substitute" textFill="WHITE">
-         <font>
-            <Font name="DINPro-Regular" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnReserve" layoutX="754.0" layoutY="670.0" mnemonicParsing="false" onAction="#toReserve" prefHeight="27.0" prefWidth="280.0" style="-fx-background-color: #252525;" text="Move player to reserve" textFill="WHITE">
-         <font>
-            <Font name="DINPro-Regular" size="13.0" />
-         </font>
-      </Button>
-      <Label layoutX="47.0" layoutY="155.0" text="Active:" textFill="WHITE" />
-      <Label layoutX="400.0" layoutY="155.0" text="Substitute:" textFill="WHITE" />
-      <Label layoutX="754.0" layoutY="155.0" text="Reserve:" textFill="WHITE" />
-   </children>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1080.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Label layoutX="56.0" layoutY="46.0" text="Team" textFill="WHITE" AnchorPane.leftAnchor="60.0"
+           AnchorPane.topAnchor="50.0">
+        <font>
+            <Font name="DINPro-Bold" size="50.0"/>
+        </font>
+    </Label>
+    <ListView fx:id="lsvActive" layoutX="47.0" layoutY="172.0" prefHeight="480.0" prefWidth="280.0"
+              style="-fx-background-color: #353535;"/>
+    <ListView fx:id="lsvReserve" layoutX="754.0" layoutY="172.0" prefHeight="480.0" prefWidth="280.0"
+              style="-fx-background-color: #353535;"/>
+    <ListView fx:id="lsvSub" layoutX="400.0" layoutY="172.0" prefHeight="480.0" prefWidth="280.0"
+              style="-fx-background-color: #353535;"/>
+    <Button fx:id="btnActive" layoutX="47.0" layoutY="670.0" mnemonicParsing="false" onAction="#toActive"
+            prefHeight="27.0" prefWidth="280.0" style="-fx-background-color: #252525;" text="Move player to active"
+            textFill="WHITE">
+        <font>
+            <Font name="DINPro-Regular" size="13.0"/>
+        </font>
+    </Button>
+    <Button fx:id="btnSub" layoutX="400.0" layoutY="670.0" mnemonicParsing="false" onAction="#toSub" prefHeight="27.0"
+            prefWidth="280.0" style="-fx-background-color: #252525;" text="Move player to substitute" textFill="WHITE">
+        <font>
+            <Font name="DINPro-Regular" size="13.0"/>
+        </font>
+    </Button>
+    <Button fx:id="btnReserve" layoutX="754.0" layoutY="670.0" mnemonicParsing="false" onAction="#toReserve"
+            prefHeight="27.0" prefWidth="280.0" style="-fx-background-color: #252525;" text="Move player to reserve"
+            textFill="WHITE">
+        <font>
+            <Font name="DINPro-Regular" size="13.0"/>
+        </font>
+    </Button>
+    <Label layoutX="47.0" layoutY="155.0" text="Active:" textFill="WHITE"/>
+    <Label layoutX="400.0" layoutY="155.0" text="Substitute:" textFill="WHITE"/>
+    <Label layoutX="754.0" layoutY="155.0" text="Reserve:" textFill="WHITE"/>
 </AnchorPane>

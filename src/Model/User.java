@@ -1,14 +1,7 @@
 package Model;
 
-import javafx.beans.InvalidationListener;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
 
 public class User {
     private String Name;
@@ -33,12 +26,13 @@ public class User {
     }
 
     public User(String name, String password, String imagePath) {
+        PlayerDBO pd = new PlayerDBO();
         this.Name = name;
         this.Password = password;
         this.ImagePath =  imagePath;
         this.Active = FXCollections.observableArrayList();
         this.Substitute = FXCollections.observableArrayList();
-        this.Reserve = FXCollections.observableArrayList();
+        this.Reserve = null;
     }
 
     public User(String name, String password) {
@@ -91,7 +85,7 @@ public class User {
     }
 
     public ObservableList<Player> getReserve() {
-        return Reserve;
+        return new PlayerDBO().defaultList;
     }
 
     public void setReserve(ObservableList<Player> reserve) {

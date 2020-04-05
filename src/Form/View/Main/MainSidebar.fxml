@@ -1,91 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-       <BorderPane fx:id="borderpane" layoutX="14.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <left>
-            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #252525;" BorderPane.alignment="CENTER">
-               <top>
-                     <VBox maxWidth="-Infinity" prefWidth="200.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
-                        <children>
-                            <GridPane maxHeight="100.0" minHeight="100.0" prefHeight="100.0" style="-fx-background-color: #202020;">
-                                <columnConstraints>
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="74.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="126.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
-                               <children>
-                                   <ImageView fx:id="pcbUserPicture" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                   <Label fx:id="lblUserName" text="\${username}" textFill="WHITE" GridPane.columnIndex="1">
-                                       <font>
-                                           <Font name="DINPro-Regular" size="14.0" />
-                                       </font>
-                                   </Label>
-                               </children>
-                            </GridPane>
-                            <Button fx:id="btnHome" mnemonicParsing="false" onAction="#toHome" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #303030;" text="Home" textFill="WHITE">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #303030;"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <BorderPane fx:id="borderpane" layoutX="14.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0"
+                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0">
+        <left>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #252525;"
+                        BorderPane.alignment="CENTER">
+                <top>
+                    <VBox maxWidth="-Infinity" prefWidth="200.0" style="-fx-background-color: #303030;"
+                          BorderPane.alignment="CENTER">
+                        <GridPane maxHeight="100.0" minHeight="100.0" prefHeight="100.0"
+                                  style="-fx-background-color: #202020;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0"
+                                                   prefWidth="74.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0"
+                                                   prefWidth="126.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <ImageView fx:id="pcbUserPicture" fitHeight="50.0" fitWidth="50.0"
+                                       pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER"
+                                       GridPane.valignment="CENTER"/>
+                            <Label fx:id="lblUserName" text="\${username}" textFill="WHITE"
+                                   GridPane.columnIndex="1">
                                 <font>
-                                    <Font name="DINPro-Regular" size="13.0" />
+                                    <Font name="DINPro-Regular" size="14.0"/>
                                 </font>
-                                <VBox.margin>
-                                    <Insets />
-                                </VBox.margin>
-                            </Button>
-                            <Button fx:id="btnTeam" mnemonicParsing="false" onAction="#toTeam" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Team" textFill="WHITE">
-                                <font>
-                                    <Font name="DINPro-Regular" size="13.0" />
-                                </font>
-                                <VBox.margin>
-                                    <Insets />
-                                </VBox.margin>
-                            </Button>
-                            <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#toPlay" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Play" textFill="WHITE">
-                                <font>
-                                    <Font name="DINPro-Regular" size="13.0" />
-                                </font>
-                                <VBox.margin>
-                                    <Insets />
-                                </VBox.margin>
-                            </Button>
-                            <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#toSettings" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="Settings" textFill="WHITE">
-                                <font>
-                                    <Font name="DINPro-Regular" size="13.0" />
-                                </font>
-                                <VBox.margin>
-                                    <Insets />
-                                </VBox.margin>
-                            </Button>
-                            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#toAbout" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #252525;" text="About" textFill="WHITE">
-                                <font>
-                                    <Font name="DINPro-Regular" size="13.0" />
-                                </font>
-                                <VBox.margin>
-                                    <Insets />
-                                </VBox.margin>
-                            </Button>
-                        </children>
-                     </VBox>
-               </top>
-               <bottom>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.08" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-                     <image>
-                        <Image url="@../../../Media/Pictures/logowhite.png" />
-                     </image>
-                  </ImageView>
-               </bottom>
+                            </Label>
+                        </GridPane>
+                        <Button fx:id="btnHome" mnemonicParsing="false" onAction="#toHome"
+                                onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0"
+                                prefWidth="200.0" style="-fx-background-color: #303030;" text="Home"
+                                textFill="WHITE">
+                            <font>
+                                <Font name="DINPro-Regular" size="13.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnTeam" mnemonicParsing="false" onAction="#toTeam"
+                                onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0"
+                                prefWidth="200.0" style="-fx-background-color: #252525;" text="Team"
+                                textFill="WHITE">
+                            <font>
+                                <Font name="DINPro-Regular" size="13.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#toPlay"
+                                onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0"
+                                prefWidth="200.0" style="-fx-background-color: #252525;" text="Play"
+                                textFill="WHITE">
+                            <font>
+                                <Font name="DINPro-Regular" size="13.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#toSettings"
+                                onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0"
+                                prefWidth="200.0" style="-fx-background-color: #252525;" text="Settings"
+                                textFill="WHITE">
+                            <font>
+                                <Font name="DINPro-Regular" size="13.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#toAbout"
+                                onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="55.0"
+                                prefWidth="200.0" style="-fx-background-color: #252525;" text="About"
+                                textFill="WHITE">
+                            <font>
+                                <Font name="DINPro-Regular" size="13.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Button>
+                    </VBox>
+                </top>
+                <bottom>
+                    <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.08" pickOnBounds="true"
+                               preserveRatio="true" BorderPane.alignment="CENTER">
+                        <Image url="@../../../Media/Pictures/logowhite.png"/>
+                    </ImageView>
+                </bottom>
             </BorderPane>
-         </left>
-       </BorderPane>
-   </children>
+        </left>
+    </BorderPane>
 </AnchorPane>

@@ -13,7 +13,7 @@ public class PlayerDBO {
 
     // achtung, vom aluege vo dere methode kriege sie augekrebs
     // eifache ersatz zun're api, da es keini git oder si koste
-    public ObservableList<Player> LoadDefault() {
+    private ObservableList<Player> LoadDefault() {
         this.defaultList = FXCollections.observableArrayList();
         this.defaultList.add(new Player(1, "Roman Bürki", "Goalie", "buerki.jpg"));
         this.defaultList.add(new Player(35, "Marwin Hitz", "Goalie", "hitz.jpg"));

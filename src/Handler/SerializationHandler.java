@@ -1,7 +1,6 @@
 package Handler;
 
 import Model.User;
-import Model.UserDBO;
 
 import java.beans.ExceptionListener;
 import java.beans.XMLDecoder;
@@ -20,11 +19,7 @@ public class SerializationHandler {
     public void SerializeUserDBO(ArrayList<User> users) throws IOException {
         FileOutputStream fos = new FileOutputStream("src/Data/Users.xml");
         XMLEncoder encoder = new XMLEncoder(fos);
-        encoder.setExceptionListener(new ExceptionListener() {
-            public void exceptionThrown(Exception e) {
-                System.out.println("Exception! :" + e.toString());
-            }
-        });
+        encoder.setExceptionListener(e -> System.out.println("Exception! :" + e.toString()));
         encoder.writeObject(users);
         encoder.close();
         fos.close();

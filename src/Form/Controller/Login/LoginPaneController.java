@@ -1,6 +1,5 @@
 package Form.Controller.Login;
 
-import Model.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -49,7 +48,7 @@ public class LoginPaneController {
     }
 
     @FXML
-    void toCreate(ActionEvent event) {
+    void toCreate() {
         this.loginController.switchCenter();
     }
 

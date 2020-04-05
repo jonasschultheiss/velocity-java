@@ -4,6 +4,7 @@ import Model.Player;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
@@ -25,21 +26,21 @@ public class ListViewCellController extends ListCell<Player> {
     @FXML
     private Label lblNumber;
 
-    public ListViewCellController() {
+    Parent root = null;
 
+    public ListViewCellController() {
+        loadFXML();
     }
 
     @FXML
     public void initialize() {
-
     }
 
     private void loadFXML() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("task_cell.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../View/ListViewCell.fxml"));
             loader.setController(this);
-            loader.setRoot(this);
-            loader.load();
+            root = loader.load();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -57,6 +58,8 @@ public class ListViewCellController extends ListCell<Player> {
             this.lblPosition.setText(player.Position);
             this.lblNumber.setText(String.valueOf(player.Number));
             // this.imvPlayerProfile.setImage(new Image("src/Media/Pictures/Players/" + player.ImageName));
+
+            setGraphic(root);
         }
     }
 }
